@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ADP/CopilotIndices/17.12.38.29086
+/.vs/ADP/FileContentIndex
+/.vs/ADP/v17
+/.vs
+/ADP/.vs/ADP/CopilotIndices/17.12.38.29086
+/ADP/.vs/ADP/FileContentIndex
+/ADP/.vs/ADP/v17
+/ADP/ADP.Web/bin/Debug/net8.0
+/ADP/ADP.Web/obj
+/DB/SMS.DB/bin/Debug
+/DB/SMS.DB/obj/Debug
