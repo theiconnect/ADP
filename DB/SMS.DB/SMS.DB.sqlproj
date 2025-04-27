@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Org.sql" />
+    <Build Include="Tables\OrgBankAccount.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Murali.SMS.DB.publish.xml" />

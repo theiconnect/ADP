@@ -1,0 +1,16 @@
+﻿CREATE TABLE [dbo].[OrgBankAccount]
+(
+	OrgBankAccountIdPk	INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	OrgIdFk				INT NOT NULL,
+	BankAccountNumber   VARCHAR(50) NOT NULL,
+	BankName			VARCHAR(255) NOT NULL,
+	IFSCCode			VARCHAR(20)  NULL,
+	AccountType			VARCHAR(50)  NULL,
+	BranchName			VARCHAR(255) NULL,
+	BranchAddress		VARCHAR(512) NULL,
+	CreatedBy			VARCHAR(512) NOT NULL,
+	CreatedOn			DATETIME NOT NULL DEFAULT(GETDATE()),
+	LastUpdatedBy		VARCHAR(512) NOT NULL,
+	LastUpdatedOn		DATETIME NOT NULL,
+	CONSTRAINT FK_OrgBankAccount_Org FOREIGN KEY (OrgIdFk) REFERENCES Org(OrgIdPk)
+)
