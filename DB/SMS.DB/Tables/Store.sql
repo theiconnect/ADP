@@ -1,0 +1,20 @@
+﻿CREATE TABLE [dbo].[Store]
+(
+	StoreIDPk INT NOT NULL PRIMARY KEY,
+	StoreCode VARCHAR(50) NOT NULL,
+	StoreName VARCHAR(256) NOT NULL,
+	AddressLine1 VARCHAR(128) NULL,
+	AddressLine2 VARCHAR(128) NULL,
+	City VARCHAR(128) NULL,
+	[State] VARCHAR(128) NULL,
+	ZipCode VARCHAR(50) NULL,
+	ContactNumber INT NULL,
+	FaxNumber VARCHAR(50) NULL,
+	ContactPersonName VARCHAR(256) NULL,
+	ContactPersonMobileNumber VARCHAR(50) NULL,
+	CreatedBy VARCHAR(512) NOT NULL,
+	CreatedOn DATETIME NOT NULL DEFAULT(GETDATE()),
+	LastUpdatedBy VARCHAR(512) NULL,
+	LastUpdatedOn DATETIME NULL
+
+)
